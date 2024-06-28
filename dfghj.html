@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Background</title>
+<style>
+  .hidden-list {
+    display: none;
+    /* Additional styling for the hidden list */
+    list-style: none;
+   
+    color: white;
+
+    
+}
+.hidden-list li {
+  padding: 5px;
+  border: 1px solid white;
+  background-color: black;
+  width: 10%;
+  
+}
+
+.hover-trigger:hover + .hidden-list {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <a href="#" class="hover-trigger">Hover over me</a>
+    <ul class="hidden-list">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
